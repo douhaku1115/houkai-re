@@ -23,16 +23,14 @@ $errors=array();                                     //エラー処理
 <link href="reset.css" rel="stylesheet" type="text/css">
 <link href="css.css" rel="stylesheet" type="text/css">
 </head>
-<header>
-    <h1>手続きサポートサイト60</h1>
-
-<?php                            
-  
-  ?>
+<div class= "header">
+    <h1><br>手続きサポートサイト</h1>
 </header>
+<div class="wrapper">
 <body>
     <?php
-  print('<dt><br>手続き : '.$_SESSION['tera']);   //提出書類
+  print('<br>*********************</br>'); 
+  print('<dt>手続き : '.$_SESSION['tera']);   //提出書類
   print('<dt>寺班 　: '.$_SESSION['jihan']);
   
   for ($i =0;$i < count($jihan);$i++){    //寺班を調べる
@@ -61,12 +59,12 @@ if (trim($_SESSION['tera'])=='') {              //年齢エラー処理、セッ
   }
 
   if($seigan == 1){$gizai = $gizai / 2 ;}  //副住職なら半分
-  print('<br><br>');
-  print('<br>*********************</br>');
+    print('<br>*********************</br>');
 
  // print('<dt><br>住職義財　　　　：'.$gizai);   
   //print('<dt>法脈相承式経営料 : 85000');   //法脈相承式経営料
-  //print('<dt>合計　　　　　　 : '.($gizai + 85000));   
+  //print('<dt>合計　　　　　　 : '.($gizai + 85000));  
+  print'<h9><br>手続き明細</h9>';
   print('<br><br>');
 
   print('<li> 住職義財　　　　 : '.$gizai.'</li>');
@@ -80,10 +78,13 @@ if (trim($_SESSION['tera'])=='') {              //年齢エラー処理、セッ
   print('<br>');
    ?>
   
-<input type="button" value="前へ" onclick="location.href='houkai40.php'" style="WIDTH: 100px; HEIGHT: 40px";/>
- <div id="branding">
-    <p>手続きサポートサイト</p>
+<input type="button" value="前へ" onclick="location.href='houkai40.php'" 
+style="WIDTH: 100px; HEIGHT: 40px";/>
+<?php print('<br><br>');?>
 </div>
-<div class="red">宗務本院</div>
+<div class="footer">
+  <h10>宗務本院</h10>
+  <p>手続きサポートサイト</p>
+  </div>
 </body>
 </html>

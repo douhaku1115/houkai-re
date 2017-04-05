@@ -75,22 +75,26 @@ $sou_age)
 <link href="reset.css" rel="stylesheet" type="text/css">
 <link href="css.css" rel="stylesheet" type="text/css">
 </head>
-<header>
-    <h1>手続きサポートサイト50</h1>
-
+<div class= "header">
+    <h1><br>手続きサポートサイト</h1>
+</header>
+<div class="wrapper">
 <?php    
                           
-                                 //提出書類
-  print('<dt><br>入力情報</dt><br>');
+  print'<h9>';                                //提出書類
+  print('<dt><br>***********</dt>');
+  print'</h9>'; 
   print('現法階　 : '.$temple->get_houkai_bef().'<br>');
   print('昇進法階 : '.$temple->get_houkai_aft().'<br>');
   print('年齢　　 : '.$temple->get_age().'<br>');
+  print('<dt>***********</dt>');
   $temple->age_check($temple->get_houkai_aft(),$sou_age);
    
 ?>
-</header>
+
+
 <body>
-  <h3>手続き明細</h3>
+  <h9><br>手続き明細</h9>
 
 <div>
 <?php                               
@@ -109,7 +113,7 @@ $sou_age)
       $end=$i;
     }
   }                                            //法階昇進のタイトル表示
-  print('<'.$houkai[$start][0].' から '.$houkai[$end][0].'> の法階昇進');
+  //print('<'.$houkai[$start][0].' から '.$houkai[$end][0].'> の法階昇進');
   print('<br>');
 
   for($j=$end;$j < $start;$j++){         //法階義財合計算出
@@ -156,10 +160,10 @@ $sou_age)
   if($start > $zogen && $zogen >= $end){
     print('<dd>座元職請願書</dd>');
     
-
+    print'<caution>';
     print('<br><dt>住職。副住職請願の手続きが必要です。</dt>'); //住職。副住職請願の手続き
     print('<dt>いずれかをチェックして下さい。</dt>');       
-    print('<br>');
+    print('</caution><br>');
     
      
    for ($i =0;$i < count($tera);$i++){  
@@ -180,12 +184,8 @@ $sou_age)
     print($jihan[$i][0].'</label>');
 
   }
-  
-
-
   }
   
- 
 ?>
 </div>  
  <?php 
@@ -195,14 +195,19 @@ $sou_age)
 //print('<input type="button" value="test" onclick="location.href=\'houkai60.php\'";/>');
  }
  ?>                                  
-<input type="button" value="前へ" onclick="location.href='houkai40.php'" style="WIDTH: 100px; HEIGHT: 40px";/> 
+<input type="button" value="前へ" onclick="location.href='houkai40.php'" 
+style="WIDTH: 100px; HEIGHT: 40px";/> 
+
  <?php 
  if($start > $zogen && $zogen >= $end){ 
-    print'<input type="submit" value="次へ" onclick=" houkai60.php" style="WIDTH: 100px; HEIGHT: 40px">';
+    print'<input type="submit" value="次へ" onclick=" houkai60.php"
+     style="WIDTH: 100px; HEIGHT: 40px">';
 }
 ?>   
-
-
-
+</div>
+<div class="footer">
+  <h10>宗務本院</h10>
+  <p>手続きサポートサイト</p>
+  </div>
 </body>
 </html>
