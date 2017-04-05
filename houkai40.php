@@ -14,15 +14,15 @@ session_start();
 <link href="reset.css" rel="stylesheet" type="text/css">
 <link href="css.css" rel="stylesheet" type="text/css">
 </head>
-<header>
+<div class= "header">
     <h1>手続きサポートサイト40</h1>
   
 </header>
 <body>
 
-<div class="box2">
-    <h1>**項目の入力をしてください**</h1>
-</div>
+<div class="wrapper">
+    <h2>**項目の入力をしてください**</h2>
+
 
 <form action="houkai50.php" method="post">
   <div>
@@ -91,11 +91,8 @@ session_start();
  <div id="branding">
     <p>手続きサポートサイト</p>
 </div>
+</div>
 
-<div class="">
-
- </div>
-
-<div class="red">宗務本院</div>
+<div class="footer">宗務本院</div>
 </body>
 </html>
