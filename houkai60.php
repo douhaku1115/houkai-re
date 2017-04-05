@@ -80,7 +80,7 @@ if (trim($_SESSION['tera'])=='') {              //年齢エラー処理、セッ
   print('<br>');
    ?>
   
-<input type="button" value="前へ" onclick="location.href='houkai40.php'";/>
+<input type="button" value="前へ" onclick="location.href='houkai40.php'" style="WIDTH: 100px; HEIGHT: 40px";/>
  <div id="branding">
     <p>手続きサポートサイト</p>
 </div>

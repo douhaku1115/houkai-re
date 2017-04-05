@@ -71,17 +71,16 @@ session_start();
     if (isset($_SESSION['shorui[]']) === False){print('<br>');}
     else{
       foreach ($_SESSION['shorui[]'] as $sho){             //前の必要書類の表示
-        if($shor === $sho){ print(' checked');}
-      
-     }
+        if($shor === $sho){ print('checked');print('/>');}
+      }
     }
-    print(' />');
+    
     print($shor.'</label><br>');
   }
-  print('<br><br>');
+  print('<br>');
 ?>
 </div>
-  <input type="submit" value="次へ"/>
+  <input type="submit" value="次へ"style="WIDTH: 100px; HEIGHT: 40px" />
 </form>
 
 
@@ -93,6 +92,8 @@ session_start();
 </div>
 </div>
 
-<div class="footer">宗務本院</div>
+<div class="footer">
+  <h1>宗務本院</h1>
+  </div>
 </body>
 </html>

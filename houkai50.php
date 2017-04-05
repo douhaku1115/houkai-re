@@ -195,10 +195,10 @@ $sou_age)
 //print('<input type="button" value="test" onclick="location.href=\'houkai60.php\'";/>');
  }
  ?>                                  
-<input type="button" value="前へ" onclick="location.href='houkai40.php'";/> 
+<input type="button" value="前へ" onclick="location.href='houkai40.php'" style="WIDTH: 100px; HEIGHT: 40px";/> 
  <?php 
  if($start > $zogen && $zogen >= $end){ 
-    print'<input type="submit" value="次へ" onclick=" houkai60.php">';
+    print'<input type="submit" value="次へ" onclick=" houkai60.php" style="WIDTH: 100px; HEIGHT: 40px">';
 }
 ?>   
 
