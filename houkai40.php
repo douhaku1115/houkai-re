@@ -13,6 +13,9 @@ session_start();
 <title>sample</title>
 <link href="reset.css" rel="stylesheet" type="text/css">
 <link href="css.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
 </head>
 <div class= "header">
     <h1><br>手続きサポートサイト</h1>
